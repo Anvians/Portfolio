@@ -7,10 +7,10 @@ export const projects = [
     repoUrl: "https://github.com/YOUR_USERNAME/independent-project",
   },
   {
-    slug: "another-project",
-    title: "Another Project",
+    slug: "github-profile-analyzer",
+    title: "GitHubProfileAnalyzer",
     description: "Description of another project.",
-    liveUrl: "https://another-project.vercel.app",
-    repoUrl: "https://github.com/YOUR_USERNAME/another-project",
+    liveUrl: "https://github-profile-analyzer-chi.vercel.app",
+    repoUrl: "https://github.com/Anvians/GithubProfileAnalyzer",
   },
 ];
