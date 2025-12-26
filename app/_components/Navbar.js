@@ -7,9 +7,9 @@ export default function Navbar() {
   const navItems = [
     { icon: <Hexagon size={18} />, label: "Home", href:"/"},
     { icon: <Layout size={18} />, label: "Work", href:"/projects" },
-    { icon: <Cpu size={18} />, label: "Stack" , href: ""},
-    { icon: <Terminal size={18} />, label: "Console", href:"" },
-    { icon: <Mail size={18} />, label: "Contact", href: "" },
+    { icon: <Cpu size={18} />, label: "Stack" , href: "/stacks"},
+    { icon: <Terminal size={18} />, label: "Console", href:"/console" },
+    { icon: <Mail size={18} />, label: "Contact", href: "contact" },
   ];
 
   return (
