@@ -7,7 +7,7 @@ import CustomCursor from "./_components/CustomCursor";
 const space = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Alex Forge | Digital Architect",
+  title: "Ankit Sharma | Digital Architect",
   description: "Futuristic portfolio built with Next.js and Tailwind v4",
 };
 
