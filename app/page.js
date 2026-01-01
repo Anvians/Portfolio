@@ -71,7 +71,7 @@ export default function Home() {
         {/* Right Side (4/12 Columns) - Sticky Portrait */}
         <div className="lg:col-span-4 relative min-h-[600px]">
           <div className="lg:sticky lg:top-32 h-[calc(100vh-160px)] min-h-[500px]">
-            <HeroImage src="/my-photo.png" />
+            <HeroImage src='/Hero.png' />
           </div>
         </div>
 

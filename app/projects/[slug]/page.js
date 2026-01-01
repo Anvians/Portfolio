@@ -23,7 +23,6 @@ export default function ProjectPage({ params }) {
       </Link>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        {/* Left: Project Info */}
         <div className="lg:col-span-1 space-y-8">
           <div>
             <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">
@@ -71,7 +70,6 @@ export default function ProjectPage({ params }) {
           </div>
         </div>
 
-        {/* Right: Immersive Viewer */}
         <div className="lg:col-span-2">
           <div className="glass-panel rounded-[2rem] overflow-hidden relative group aspect-video lg:aspect-auto lg:h-[70vh]">
              {/* Viewer Header */}

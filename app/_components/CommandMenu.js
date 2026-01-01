@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Command } from "cmdk"; // Install: npm install cmdk
+import { Command } from "cmdk"; 
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function CommandMenu() {

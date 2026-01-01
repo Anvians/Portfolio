@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Send, Mail, MessageSquare, Globe, ShieldCheck, Zap } from "lucide-react";
 
 export default function ContactPage() {
-  const [status, setStatus] = useState("idle"); // idle, sending, success
+  const [status, setStatus] = useState("idle"); 
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   const handleSubmit = async (e) => {
@@ -32,7 +32,6 @@ export default function ContactPage() {
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        {/* Left: The Transmission Form */}
         <div className="lg:col-span-7">
           <motion.form 
             onSubmit={handleSubmit}
@@ -99,7 +98,6 @@ export default function ContactPage() {
           </motion.form>
         </div>
 
-        {/* Right: Social Coordinates & Status */}
         <div className="lg:col-span-5 space-y-6">
           <div className="glass-panel p-8 rounded-[2.5rem]">
             <h3 className="text-xs font-mono text-slate-500 uppercase tracking-widest mb-6">Neural_Nodes</h3>

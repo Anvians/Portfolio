@@ -26,7 +26,7 @@ const ProjectCard = ({ title, description, liveUrl, repoUrl, slug }) => {
       <div className="relative h-48 w-full overflow-hidden bg-black/40 border-b border-white/10">
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-dark-bg/80 to-transparent pointer-events-none" />
         
-        {/* The Iframe (Scaled down for preview) */}
+      
         <div className="w-[100%] h-[100%] origin-top pointer-events-none">
           <iframe
             src={liveUrl}
@@ -56,11 +56,11 @@ const ProjectCard = ({ title, description, liveUrl, repoUrl, slug }) => {
           </h3>
           <div className="flex gap-3 text-slate-400">
             {repoUrl && (
-              <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white  transition-colors">
                 <Github size={18} />
               </a>
             )}
-            <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="hover:text-neon-cyan transition-colors">
+            <a href={liveUrl} target="_blank" rel="noopener  noreferrer" className="hover:text-neon-cyan transition-colors">
               <ExternalLink size={18} />
             </a>
           </div>
