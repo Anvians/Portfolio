@@ -1,8 +1,12 @@
+import Link from "next/link";
 import GlassCard from "./_components/GlassCard";
 import HeroImage from "./_components/HeroImage";
 import { Cpu, Layout } from "lucide-react";
 
 export default function Home() {
+
+
+
   return (
     <main className="min-h-screen pb-20 px-6 lg:px-12 max-w-[1500px] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
@@ -27,14 +31,16 @@ export default function Home() {
 
           {/* Secondary Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link href='https://chat-app-coral-psi.vercel.app/' target="_blank" rel="noopener noreferrer">
             <GlassCard className="group">
               <div className="flex justify-between items-start mb-10">
                 <span className="p-2 bg-neon-cyan/10 rounded-lg text-neon-cyan"><Layout size={20}/></span>
                 <span className="text-[10px] font-mono text-slate-500">PROJ_01</span>
               </div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-cyan transition-colors">Quantum UI</h3>
-              <p className="text-sm text-slate-400">Advanced component library for neural interfaces.</p>
+              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-cyan transition-colors">Chat App</h3>
+              <p className="text-sm text-slate-400">App to chat for developer.</p>
             </GlassCard>
+            </Link>
 
             <GlassCard className="group">
               <div className="flex justify-between items-start mb-10">
