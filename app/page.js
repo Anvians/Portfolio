@@ -41,7 +41,6 @@ export default function Home() {
               <p className="text-sm text-slate-400">App to chat for developer.</p>
             </GlassCard>
             </Link>
-
             <GlassCard className="group">
               <div className="flex justify-between items-start mb-10">
                 <span className="p-2 bg-neon-purple/10 rounded-lg text-neon-purple"><Cpu size={20}/></span>
