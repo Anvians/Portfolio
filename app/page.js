@@ -47,8 +47,8 @@ export default function Home() {
                 <span className="p-2 bg-neon-purple/10 rounded-lg text-neon-purple"><Cpu size={20}/></span>
                 <span className="text-[10px] font-mono text-slate-500">PROJ_02</span>
               </div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-purple transition-colors">Hiver - AI-Powered Email Management System</h3>
-              <p className="text-sm text-slate-400">help businesses manage, classify, and analyze customer emails with strict data isolation.</p>
+              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-purple transition-colors">AI Evaluation Project</h3>
+              <p className="text-sm text-slate-400">manage, classify, and analyze emails with strict data isolation.</p>
             </GlassCard>
             </Link>
             <div className="md:col-span-2 glass-panel p-8 rounded-[2rem]">
