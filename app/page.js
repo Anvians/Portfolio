@@ -31,25 +31,26 @@ export default function Home() {
 
           {/* Secondary Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link href='https://chat-app-coral-psi.vercel.app/' target="_blank" rel="noopener noreferrer">
+            <Link href='https://campus-events-handler.vercel.app/' target="_blank" rel="noopener noreferrer">
             <GlassCard className="group">
               <div className="flex justify-between items-start mb-10">
                 <span className="p-2 bg-neon-cyan/10 rounded-lg text-neon-cyan"><Layout size={20}/></span>
                 <span className="text-[10px] font-mono text-slate-500">PROJ_01</span>
               </div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-cyan transition-colors">Chat App</h3>
-              <p className="text-sm text-slate-400">App to chat for developer.</p>
+              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-cyan transition-colors">College Connect</h3>
+              <p className="text-sm text-slate-400">College events management platform.</p>
             </GlassCard>
             </Link>
+            <Link href='https://hiver-five.vercel.app/' target="_blank" rel="noopener noreferrer">
             <GlassCard className="group">
               <div className="flex justify-between items-start mb-10">
                 <span className="p-2 bg-neon-purple/10 rounded-lg text-neon-purple"><Cpu size={20}/></span>
                 <span className="text-[10px] font-mono text-slate-500">PROJ_02</span>
               </div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-purple transition-colors">Nebula Engine</h3>
-              <p className="text-sm text-slate-400">High-performance data visualization framework.</p>
+              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-purple transition-colors">Hiver - AI-Powered Email Management System</h3>
+              <p className="text-sm text-slate-400">help businesses manage, classify, and analyze customer emails with strict data isolation.</p>
             </GlassCard>
-            
+            </Link>
             <div className="md:col-span-2 glass-panel p-8 rounded-[2rem]">
                <div className="flex items-center gap-4 mb-6">
                  <div className="h-[1px] flex-1 bg-white/10" />
