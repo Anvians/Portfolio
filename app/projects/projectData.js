@@ -9,7 +9,7 @@ export const projects = [
   {
     slug: "github-profile-analyzer",
     title: "GitVisualizer",
-    description: "Description of another project.",
+    description: "ReactJS Vite frontend ",
     liveUrl: "https://gitvisualizer-anvians.vercel.app",
     repoUrl: "https://github.com/Anvians/GitAnalyzer",
   },
@@ -20,5 +20,11 @@ export const projects = [
     liveUrl: "https://hiver-anvians.vercel.app/",
     repoUrl: "https://github.com/Anvians/Hiver",
   },
-  
+  {
+    slug: "College Connect",
+    title: "College Connect",
+    description: "College events management platform.",
+    liveUrl: "https://collegeconnect-anvians.vercel.app/",
+    repoUrl: "https://github.com/Anvians/CollegeConnect",
+  },
 ];

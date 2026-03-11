@@ -38,17 +38,17 @@ export default function Home() {
                 <span className="text-[10px] font-mono text-slate-500">PROJ_01</span>
               </div>
               <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-cyan transition-colors">College Connect</h3>
-              <p className="text-sm text-slate-400">College events management platform.</p>
+              <p className="text-sm text-slate-400">College events management platform, with private social media integration.</p>
             </GlassCard>
             </Link>
-            <Link href='https://hiver-five.vercel.app/' target="_blank" rel="noopener noreferrer">
+            <Link href='https://gitvisualizer-anvians.vercel.app' target="_blank" rel="noopener noreferrer">
             <GlassCard className="group">
               <div className="flex justify-between items-start mb-10">
                 <span className="p-2 bg-neon-purple/10 rounded-lg text-neon-purple"><Cpu size={20}/></span>
                 <span className="text-[10px] font-mono text-slate-500">PROJ_02</span>
               </div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-purple transition-colors">AI Evaluation Project</h3>
-              <p className="text-sm text-slate-400">manage, classify, and analyze emails with strict data isolation.</p>
+              <h3 className="text-2xl font-bold mb-2 group-hover:text-neon-purple transition-colors">GitVisualizer</h3>
+              <p className="text-sm text-slate-400">Analyze GitHub profiles with visual charts for repositories, languages, and activity statistics.</p>
             </GlassCard>
             </Link>
             <div className="md:col-span-2 glass-panel p-8 rounded-[2rem]">

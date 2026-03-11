@@ -1,30 +1,44 @@
 "use client";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 
 export default function CustomCursor() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [active, setActive] = useState(false);
+  const cursorX = useMotionValue(-100);
+  const cursorY = useMotionValue(-100);
+
+  const springConfig = { damping: 25, stiffness: 700, mass: 0.05 };
+  const cursorXSpring = useSpring(cursorX, springConfig);
+  const cursorYSpring = useSpring(cursorY, springConfig);
 
   useEffect(() => {
-    const move = (e) => setPosition({ x: e.clientX, y: e.clientY });
+    const move = (e) => {
+      cursorX.set(e.clientX);
+      cursorY.set(e.clientY);
+    };
+    
     window.addEventListener("mousemove", move);
     return () => window.removeEventListener("mousemove", move);
-  }, []);
+  }, [cursorX, cursorY]);
 
   return (
-    <div className="hidden lg:block">
-      {/* Main Cursor Ring */}
+    <div className="hidden lg:block pointer-events-none z-[9999]">
+      
       <motion.div
-        animate={{ x: position.x - 20, y: position.y - 20, scale: active ? 1.5 : 1 }}
-        transition={{ type: "spring", damping: 25, stiffness: 200, mass: 0.5 }}
-        className="fixed top-0 left-0 w-10 h-10 border border-neon-cyan/50 rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        style={{
+          x: cursorXSpring,
+          y: cursorYSpring,
+        }}
+        className="fixed top-0 left-0 w-8 h-8 -ml-4 -mt-4 border-2 border-neon-cyan/80 rounded-full mix-blend-difference"
       />
-      {/* Center Dot */}
+
       <motion.div
-        animate={{ x: position.x - 3, y: position.y - 3 }}
-        className="fixed top-0 left-0 w-1.5 h-1.5 bg-neon-purple rounded-full pointer-events-none z-[9999]"
+        style={{
+          x: cursorX,
+          y: cursorY,
+        }}
+        className="fixed top-0 left-0 w-2 h-2 -ml-1 -mt-1 bg-neon-purple rounded-full mix-blend-difference"
       />
+      
     </div>
   );
 }
