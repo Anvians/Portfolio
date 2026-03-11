@@ -7,11 +7,11 @@ export const projects = [
     repoUrl: "https://github.com/Anvians/independent-project",
   },
   {
-    slug: "github-profile-analyzer",
+    slug: "GitVisualizer",
     title: "GitVisualizer",
     description: "ReactJS Vite frontend ",
     liveUrl: "https://gitvisualizer-anvians.vercel.app",
-    repoUrl: "https://github.com/Anvians/GitAnalyzer",
+    repoUrl: "https://github.com/Anvians/GitVisualizer",
   },
   {
     slug: "Email-Classifier",
@@ -24,7 +24,7 @@ export const projects = [
     slug: "College Connect",
     title: "College Connect",
     description: "College events management platform.",
-    liveUrl: "https://collegeconnect-anvians.vercel.app/",
-    repoUrl: "https://github.com/Anvians/CollegeConnect",
+    liveUrl: "https://campus-events-handler.vercel.app/",
+    repoUrl: "https://github.com/Anvians/College-Connect",
   },
 ];
