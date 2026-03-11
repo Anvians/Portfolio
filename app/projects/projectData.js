@@ -4,13 +4,21 @@ export const projects = [
     title: "OSINT Username Crawler",
     description: "FastAPI backend + HTML frontend project.",
     liveUrl: "https://portfoliotools-two.vercel.app",
-    repoUrl: "https://github.com/YOUR_USERNAME/independent-project",
+    repoUrl: "https://github.com/Anvians/independent-project",
   },
   {
     slug: "github-profile-analyzer",
-    title: "GitHubProfileAnalyzer",
+    title: "GitVisualizer",
     description: "Description of another project.",
-    liveUrl: "https://github-profile-analyzer-chi.vercel.app",
-    repoUrl: "https://github.com/Anvians/GithubProfileAnalyzer",
+    liveUrl: "https://gitvisualizer-anvians.vercel.app",
+    repoUrl: "https://github.com/Anvians/GitAnalyzer",
   },
+  {
+    slug: "Email-Classifier",
+    title: "Hiver",
+    description: "Gemini + ReactJS.",
+    liveUrl: "https://hiver-anvians.vercel.app/",
+    repoUrl: "https://github.com/Anvians/Hiver",
+  },
+  
 ];
