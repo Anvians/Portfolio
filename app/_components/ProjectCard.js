@@ -36,7 +36,7 @@ const ProjectCard = ({ title, description, liveUrl, repoUrl, slug }) => {
         </div>
 
         {/* View Details Overlay */}
-        <a href={liveUrl} target="_blank" rel="noopener  noreferrer"
+        <a href={liveUrl? liveUrl : repoUrl} target="_blank" rel="noopener  noreferrer"
           className="absolute inset-0 z-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-dark-bg/40 backdrop-blur-sm"
         >
           <div className="flex items-center gap-2 px-4 py-2 bg-neon-cyan text-black font-bold rounded-full text-sm">
