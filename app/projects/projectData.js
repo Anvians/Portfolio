@@ -27,4 +27,11 @@ export const projects = [
     liveUrl: "https://campus-events-handler.vercel.app/",
     repoUrl: "https://github.com/Anvians/College-Connect",
   },
+  {
+    slug: "CHAT APP",
+    title: "CHAT APP",
+    description: "Real-time chat application.",
+    liveUrl: "https://chat-anvians.vercel.app/",
+    repoUrl: "https://github.com/Anvians/Chat-App",
+  },
 ];
